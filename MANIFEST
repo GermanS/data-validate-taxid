@@ -1,0 +1,11 @@
+lib/Data/Validate/TaxID.pm
+lib/Data/Validate/TaxID/base.pm
+lib/Data/Validate/TaxID/rus.pm
+LICENSE
+Makefile.pl
+Makefile.PL
+MANIFEST			This list of files
+META.json			Module JSON meta-data (added by MakeMaker)
+META.yml			Module YAML meta-data (added by MakeMaker)
+t/data-validate-taxid-rus.t
+t/data-validate-taxid.t
