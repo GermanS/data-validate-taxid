@@ -83,3 +83,71 @@ sub _validate_individual_inn {
 1;
 
 __END__
+
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Data::Validate::TaxID::rus - Russian TaxID (INN) validation
+
+=head1 SYNOPSIS
+
+    use Data::Validate::TaxID::rus;
+    my $validator = Data::Validate::TaxID::rus -> new();
+    my $result = $validator -> check( 1234567890 )
+
+=head1 DESCRIPTION
+
+Russian Tax Identification Number validation.
+
+In accordance with paragraph 7 of Article 84 of the Russian Federation Tax Code all Russian taxpayers whether individuals or businesses are assigned a unique Taxpayer Personal Identification Number known as INN (Russian analog for TIN).
+The INN refers for all types of taxes in the Russian Federation.
+
+INN has the following structure:
+
+=over 4
+
+=item
+
+For businesses it is a ten-digit code
+
+=item
+
+For individuals it is a twelve-digit code
+
+=back
+
+=head1 METHODS
+
+=head2 check( $tax_id )
+
+Method implements the validation algorithm for the Russian TaxID.
+
+Returns 1 if the TaxID is valid.
+
+=head2 is_company( $tax_id )
+
+Method returns 1 if the TaxID of organization is valid.
+
+=head2 is_individual( $tax_id )
+
+Method returns 1 if the TaxID of individual is valid.
+
+=head1 BUGS
+
+Please report any bugs through the web interface at
+L<https://github.com/GermanS/data-validate-taxid>
+
+=head1 AUTHOR
+
+German Semenkov
+german.semenkov@gmail.com
+
+=head1 COPYRIGHT AND LICENSE
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
